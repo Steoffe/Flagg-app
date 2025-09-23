@@ -1,4 +1,3 @@
-
 import { useEffect, useMemo, useState } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { useTheme } from "@/lib/theme";
@@ -96,13 +95,12 @@ export default function Country() {
 
   return (
     <article className="space-y-8 text-[16px]">
-
       <button
         onClick={() => navigate("/")}
         className="inline-flex items-center gap-3 text-[17px] md:text-[18px] font-bold hover:opacity-80 transition"
       >
         <img
-          src={theme === "dark" ? arrowLeft : arrowLeftDark} 
+          src={theme === "dark" ? arrowLeft : arrowLeftDark}
           alt=""
           aria-hidden="true"
           className="h-6 w-6"
@@ -110,21 +108,17 @@ export default function Country() {
         <span>Back</span>
       </button>
 
-    
       <div className="grid gap-10 md:grid-cols-2 md:items-center">
-
         <div className="flex md:block justify-center">
           <img
             src={country.flags?.svg || country.flags?.png}
             alt={country.flags?.alt || country.name?.common}
-            className="w-full max-w-[560px] aspect-[4/3] object-cover rounded-lg shadow-sm"
+            className="w-full max-w-[560px] max-h-[400px] object-contain rounded-lg shadow-sm"
           />
         </div>
 
- 
         <div className="space-y-6">
           <h1 className="text-3xl font-extrabold">{country.name?.common}</h1>
-
 
           <div className="grid gap-6 md:grid-cols-2 leading-relaxed">
             <ul className="space-y-2 text-foreground/90">
@@ -163,7 +157,6 @@ export default function Country() {
               </li>
             </ul>
           </div>
-
 
           <div className="space-y-2">
             <h2 className="text-xl font-semibold">Border countries:</h2>
