@@ -1,2 +1,2 @@
-- [Github repository]()
-- [Deployat projekt]()
+- [Github repository](https://github.com/Steoffe/Flagg-app)
+- [Deployat projekt](https://willowy-duckanoo-c71d0d.netlify.app/)
