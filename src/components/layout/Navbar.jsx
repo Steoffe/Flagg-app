@@ -15,14 +15,13 @@ export default function Navbar() {
 
         <h1 className="text-lg font-extrabold">The Flag App</h1>
 
-
+        
         <img
           src={logo}
           alt=""
           className="hidden md:block h-6 object-contain"
           aria-hidden="true"
         />
-
         <button
           onClick={toggle}
           className="flex items-center gap-2 text-sm font-bold px-3 py-2 rounded-md
